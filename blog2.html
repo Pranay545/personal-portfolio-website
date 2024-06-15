@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" href="Hannah.png">
+    <style>
+        /* Main Content Styles */
+        main {
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .lp {
+            background-color: #fff;
+            box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.1);
+            max-width: 1040px;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            animation: fadeInUp 1s ease;
+        }
+        .lp:hover {
+            box-shadow: 0px 8px 24px 8px rgba(0, 0, 0, 0.2);
+        }
+        .blog__content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            color: #555;
+            animation: slideInRight 1s ease;
+        }
+        h1 {
+            color: #333;
+            font-size: 3.5rem;
+            margin-bottom: 16px;
+            animation: fadeInLeft 1s ease;
+        }
+        .blog__mainText p {
+            color: #666;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+            animation: fadeIn 1s ease;
+        }
+        span.blog__mainText__letter {
+            color: rgb(173, 51, 255);
+            font-size: 3rem;
+            line-height: 45px;
+            padding-right: 8px;
+        }
+        .blog__img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-bottom: 5px solid rgb(173, 51, 255);
+            animation: slideInLeft 1s ease;
+        }
+
+        @media screen and (max-width: 945px) {
+            .lp {
+                padding: 0;
+            }
+            .blog__content {
+                padding: 24px;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+            .blog__mainText p {
+                font-size: 1.1rem;
+            }
+            .blog__img {
+                margin-bottom: 20px;
+            }
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Pranay Dhingreja</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="home.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="lp">
+            <img src="npr.brightspotcdn.jpg" class="blog__img">
+            <div class="blog__content">
+                <h1>Lessons from the Past: Journey Towards the Future</h1>
+                <div class="blog__mainText">
+                    <p>Many a time, the future mirrors the past, and we humans experience the inevitable fate we set for ourselves. In the words of Uncle Iroh from "Avatar: The Last Airbender," "Look inwards of yourself." This isn't about deja vu or sudden epiphanies, but about introspection and learning from our experiences. While humans stand at the apex of evolution, we can still exhibit primitive behaviors.</p>
+                    <p>Life has this weird way of repeating itself, doesn't it? We make the same mistakes, fall into the same traps. But it's in those moments of déjà vu that we find the real gems of wisdom. Take my overconfidence, for example. Thought I could breeze through everything last minute, but boy, was I wrong.</p>
+                    <p>Picture this: a big presentation, everyone's showing off their well-prepared work, and there I am with my hastily thrown-together mess. It was embarrassing, to say the least. That moment was a wake-up call, a slap in the face reminding me of the importance of planning ahead.</p>
+                    <p>Nowadays, I'm all about foresight. I plan meticulously, anticipate challenges, and yeah, I still stumble sometimes. But with each fall, I pick myself up, dust myself off, and remind myself that strategic thinking is key.</p>
+                    <p>See, the journey towards the future isn't about blindly stumbling forward; it's about taking those stumbles, learning from them, and using them to carve out a better tomorrow. It's about acknowledging our past mistakes and using them to pave a smoother path ahead. And let me tell you, that path looks pretty darn promising.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+    <div class="blog__nav">
+        <button onclick="window.location.href='blog1.html'">Previous Blog</button>
+        <button onclick="window.location.href='blog3.html'">Next Blog</button>
+    </div>
+</body>
+</html>

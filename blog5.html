@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" href="Hannah.png">
+    <style>
+        /* Main Content Styles */
+        main {
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .lp {
+            background-color: #fff;
+            box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.1);
+            max-width: 1040px;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            animation: fadeInUp 1s ease;
+        }
+        .lp:hover {
+            box-shadow: 0px 8px 24px 8px rgba(0, 0, 0, 0.2);
+        }
+        .blog__content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            color: #555;
+            animation: slideInRight 1s ease;
+        }
+        h1 {
+            color: #333;
+            font-size: 3.5rem;
+            margin-bottom: 16px;
+            animation: fadeInLeft 1s ease;
+        }
+        .blog__mainText p {
+            color: #666;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+            animation: fadeIn 1s ease;
+        }
+        span.blog__mainText__letter {
+            color: rgb(173, 51, 255);
+            font-size: 3rem;
+            line-height: 45px;
+            padding-right: 8px;
+        }
+        .blog__img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-bottom: 5px solid rgb(173, 51, 255);
+            animation: slideInLeft 1s ease;
+        }
+
+        @media screen and (max-width: 945px) {
+            .lp {
+                padding: 0;
+            }
+            .blog__content {
+                padding: 24px;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+            .blog__mainText p {
+                font-size: 1.1rem;
+            }
+            .blog__img {
+                margin-bottom: 20px;
+            }
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Pranay Dhingreja</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="home.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="lp">
+            <img src="pezyt56159o41.jpg" class="blog__img">
+            <div class="blog__content">
+                <h1>God of War: A true masterpiece</h1>
+                <div class="blog__mainText">
+                    <p>I usually write about life and epiphanies, but I couldn't resist expressing my amazement for the God of War series, especially its latest parts. The character development from the early 2000s games to the recent God of War: Ragnarok is simply incredible.</p>
+                    <p>Kratos, the main character, has changed so much over the years. He started as a vengeful warrior full of rage, but now he's a complex, relatable figure. In the latest games, we see him dealing with his past and trying to be a better father to his son, Atreus. This growth shows the brilliant writing and dedication of the developers.</p>
+                    <p>The technical aspects of God of War are just as impressive. The graphics are stunning, with detailed environments that bring Norse mythology to life. The combat is smooth and engaging, balancing strategy and action perfectly. The soundtrack and voice acting add so much depth, making the game truly immersive.</p>
+                    <p>The plot of God of War: Ragnarok is flawless, mixing mythology, family dynamics, and personal redemption. The relationship between Kratos and Atreus is at the heart of the story, adding emotional weight to their journey. The game blends intense action with quiet moments, creating a rich narrative that keeps players hooked from start to finish.</p>
+                    <p>In conclusion, God of War is more than just a game; it's a monumental achievement in storytelling and design. Whether you're a long-time fan or new to the series, it offers an unmatched experience that resonates on both emotional and technical levels. It's no surprise that God of War is often hailed as one of the greatest games of all time.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="script.js"></script>
+    <div class="blog__nav">
+        <button onclick="window.location.href='blog4.html'">Previous Blog</button>
+        <button onclick="window.location.href='blog5.html'">Next Blog</button>
+    </div>
+</body>
+</html>

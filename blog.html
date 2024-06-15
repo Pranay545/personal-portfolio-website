@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Pranay Dhingreja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Additional CSS libraries for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/png" href="Hannah.png">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Pranay Dhingreja</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="home.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="blog">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__bounce">Latest Blog Posts</h2>
+      <div class="blog-posts">
+        <!-- Blog Post Items Go Here -->
+        <div class="blog-post animate__animated animate__fadeIn">
+          <img src="1635408443707.jpg" alt="Blog Post Image">
+          <div class="post-content">
+            <h3 class="post-title">Fear: Friend or Foe</h3>
+            <p class="post-meta">Posted by Pranay Dhingreja on June 9, 2024</p>
+            <p class="post-excerpt">A thrilling trek, where every step is a triumph over challenges.</p>
+            <a href="blog1.html" class="read-more">Read More</a>
+        </div>
+        
+        </div>
+        <div class="blog-post animate__animated animate__fadeIn">
+          <img src="360_F_572660787_IAJ4qSGWHVkOfKRfWZSdsSmpCWweyjcI.jpg" alt="Blog Post Image">
+          <div class="post-content">
+            <h3 class="post-title">Lessons from the Past: Journey Towards the Future</h3>
+            <p class="post-meta">Posted by Pranay Dhingreja on May 16, 2024</p>
+            <p class="post-excerpt"> The power of introspection and foresight as we explore how the past shapes our future.</p>
+            <a href="blog2.html" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog-post animate__animated animate__fadeIn">
+          <img src="main-IMG_4087.jpg" alt="UWC Maastricht">
+          <div class="post-content">
+              <h3 class="post-title"> My Journey to UWC Maastricht</h3>
+              <p class="post-meta">Posted by Pranay Dhingreja on May 9th 2024</p>
+              <p class="post-excerpt">Ups and downs in the application process from essays to creating paper books, how I reached UWC Maastricht.</p>
+              <a href="blog3.html" class="read-more">Read More</a>
+          </div>
+      </div>
+        <div class="blog-post animate__animated animate__fadeIn">
+          <img src="Screenshot 2024-06-09 at 4.05.18 PM.png" alt="Blog Post Image">
+          <div class="post-content">
+            <h3 class="post-title">One of the proudest moments of my life</h3>
+            <p class="post-meta">Posted by Pranay Dhingreja on May 9th 2024</p>
+            <p class="post-excerpt">A five year journey comes to an end and with it me as the Valedictorian of my class. Celebrating the countless memories and collective efforts of everyone.</p>
+            <a href="blog4.html" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog-post animate__animated animate__fadeIn">
+          <img src="1000_F_518120843_ZSTOeZdIc5EFUpEeyqSHkOVp3t6qC91x.jpg" alt="Blog Post Image">
+          <div class="post-content">
+            <h3 class="post-title">The single greatest series of games I have played</h3>
+            <p class="post-meta">Posted by Pranay Dhingreja on March 27th, 2024</p>
+            <p class="post-excerpt">A Spartan warrior who has left the realm of the Greek Pantheon to pursue the nine realms fighting alongside his son Atreus. An epic journey where mythology and emotion blend seamlessly, making God of War: Ragnarok a timeless masterpiece.</p>
+            <a href="blog5.html" class="read-more">Read More</a>
+          </div>
+        </div>
+        <!-- Repeat this structure for each additional blog post -->
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <!-- Add more social icons as needed -->
+      </div>
+      <p class="footer-text">&copy; 2024 Pranay Dhingreja. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Additional JavaScript libraries for interactivity -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    new WOW().init();
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      var navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
